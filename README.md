@@ -77,7 +77,7 @@ The Scéalextric distribution contains a variety of spreadsheets, each one a tri
 
 Veale's script midpoints.xlsx
 
-This triple store contains the action triples which are described above. Each row contains at least one triple, where the first column holds the first action in the triple, the second column holds the second action, and the third column holds the third action. Since each cell may contain multiple comma-separated values, then a single row may in fact contain multiple action triples. If column 1 holds n1 actions, column 2 holds n2 actions, and column 3 holds n3 actions, then the row encodes n1*n2*n2 different action triples
+This triple store contains the action triples which are described above. Each row contains at least one triple, where the first column holds the first action in the triple, the second column holds the second action, and the third column holds the third action. Since each cell may contain multiple comma-separated values, then a single row may in fact contain multiple action triples. If column 1 holds n1 actions, column 2 holds n2 actions, and column 3 holds n3 actions, then the row encodes n1 by n2 by n3 different action triples
 
 Veale's idiomatic actions.xlsx
 

@@ -1,6 +1,12 @@
 # Scealextric
 A knowledge-based system for generating plots and rendering them as idiomatic English texts
 
+Created by Tony Veale for use by the CC community. No warranty is offered or implied. Whe publishing work based in whole or in part on these resources, please cite the following paper as a reference for the Scéalextric approach and knowledge resource:
+
+Veale, T. (2016). A Rap on the Knuckles and a Twist in the Tale: From Tweeting Affective Metaphors to Generating Stories with a Moral. In Proceedings of the AAAI Spring Symposium on Ethical and Moral Considerations in Non-Human Agents. 
+
+Scéalextric:
+
 We often think of stories in terms of journeys and paths. Indeed, the classic metaphors for taking about plots are fundamentally path-based, so we talk of dramatic "twists" and unexpected "turns" in a story. Some stories are explicitly about journeys, and are often filmed as road movies (like Easy Rider andDances with Wolves). Quest-based stories involving a search (for a ring, the holy grail, etc.) are also explicitly about the path from start to end.
 
 Children love to play with train sets that allow them to build their own narrative microcosms and to imagine new stories within these toy worlds. They also love to play with dolls and action figures and combine them in new scenarios undreamt of by the toy manufacturers. Train sets, and their race-car equivalents (the most famous being Scalextric) allow kids to build complex tracks on which to run their train sets or race cars. The more complex the track, the greater the potential for narrative complexity and drama. Imagine if we (and our machines) could build stories as easily as children build train tracks and race tracks, from the same kinds of prefabricated track segments that simply click together end-to-end.

@@ -1,7 +1,7 @@
 # Scealextric
 A knowledge-based system for generating plots and rendering them as idiomatic English texts
 
-Created by Tony Veale for use by the CC community. No warranty is offered or implied. Whe publishing work based in whole or in part on these resources, please cite the following paper as a reference for the Scéalextric approach and knowledge resource:
+Created by Tony Veale for use by the CC community. No warranty is offered or implied. When publishing work based in whole or in part on these resources, please cite the following paper as a reference for the Scéalextric approach and knowledge resource:
 
 Veale, T. (2016). A Rap on the Knuckles and a Twist in the Tale: From Tweeting Affective Metaphors to Generating Stories with a Moral. In Proceedings of the AAAI Spring Symposium on Ethical and Moral Considerations in Non-Human Agents. 
 
@@ -64,7 +64,34 @@ thereafter A treated B as its personal assassin and degraded it accordingly
 By now it should go without saying that all of this information is also stored as a collection of triples. 
 In fact, every useful piece of information in Scéalextric is stored as a semantic triple. 
 Now, one can use XML, RDF, RDFS or OWL to store a collection of semantic triples, but the core of the triple stays the same regardless of the formalism we use to encode it. 
+
 So why bother with a complex syntactic sugar for the sake of formalistic appearances? When it comes to maintaining and editing and sharing a large body of semantic triples the most flexible format is a spreadsheet. 
 As mundane as it may sound, a spreadsheet is perfect for this kind of representation work. 
+
 Every cell, representing as it does a value-containing intersection of a named column and a named row, represents a single triple. We can share spreadsheets easily (and post them on the Web as Google docs for communal editing) and cut-and-paste relevant parts with abandon. 
 So every piece of information in Scéalextricis to be found in a spreadsheet. Each sheet can be saved as a tab-separated-values text file for easy processing by Java and Python programs, and we encourage you to add new columns and rows to each one, and to create new spreadsheets of your own with complementary forms of knowledge.
+
+Consider a semantic relationdhip P(X, Y) where P is a predicate that holds between X and Y.  We can represent a collection of triples of the form P(X, Y) in a spreadsheet with a column labelled P, a row whose first (and key) value is X, and a cell at the intersection of this row and the column labelled P that contains the value Y. This cell may contain multiple values Y1, Y2 ... Yn, each separated by commas, so this cell would represent a group of predications P(X, Y1), P(X, Y2) ... P(X, Yn)
+
+The Scéalextric distribution contains a variety of spreadsheets, each one a triple store that stores its semantic triples in this fashion. The following are the main files in the distribution:
+
+Veale's script midpoints.xlsx
+
+This triple store contains the action triples which are described above. Each row contains at least one triple, where the first column holds the first action in the triple, the second column holds the second action, and the third column holds the third action. Since each cell may contain multiple comma-separated values, then a single row may in fact contain multiple action triples. If column 1 holds n1 actions, column 2 holds n2 actions, and column 3 holds n3 actions, then the row encodes n1*n2*n2 different action triples
+
+Veale's idiomatic actions.xlsx
+
+This triple maps actions (verbs) onto one or more idiomatic renderings. The action is simply a verb, and it is assumed that the proptagonist (subject) is A and the antagonist (object) is B. The idiomatic rendering contains A and B as placeholders, to be replaced in the generation process with the actual protoganist and antagonist.
+
+Veale's initial bookend actions.xlsx
+
+This triple store provides a scene-establishing preamble for every action verb, so that a story beginning with that action/verb might be prefaced with this preasmble.
+
+Veale's closing bookend actions.xlsx
+
+This triple store provides a moralistic epilogue for every action verb, so that a story ending with that action/verb might be concluded with this "meassage" for the reader.
+
+Veale's action pairs.xlsx
+
+This triple store provides a logical link between actions that may follow each other in a story (as derived from the structure of the action triples in Veale's script midpoints.xlsx)
+

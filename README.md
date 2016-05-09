@@ -17,9 +17,21 @@ attack   are_defeated_by   bow_down_to
 
 This triple should be read as follows:
 
+A attack B   then   A is defeated by B    then   A bow_down_to B
+
+In each case the action/verb is flanked by the default subject A on the left and the default object B on the right. A and B will be instantiated with specific characters later in the story-generation process when the conceptual fabula is rendered as a linguistic narrative.
+
+To make a verb/action work in the opposite direction, that is, to swap the positions of A and B, we can mark the action with a *
+The following triple is thus equivalent to the triple above:
+
+attack   *defeat   bow_down_to
+
+Once again, this triple should be read as follows:
+
 A attack B   then   B defeat A    then   A bow_down_to B
 
 Notice that the implied A (the protagonist) and B (the antagonist) turn each action into a semantic triple. So an action triple is actually a triple comprising three actions which are themselves a trio of semantic elements.
+
 So this action triple (attack:are_defeated_by:bow_down_to) can be linked to others to build a longer plot, just as Scalextric track segments can be clicked together in an interlocking fashion to make a complete track. One might ask: what drives A to attack B? And what happens after a defeated A bows down to B?
 To answer the first question we can connect a triple that ends with A attacking B, such as:
 

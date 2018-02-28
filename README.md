@@ -1,17 +1,18 @@
 # Scealextric
 A knowledge-based system for generating plots and rendering them as idiomatic English texts
 
-Created by Tony Veale for use by the CC community. No warranty is offered or implied. When publishing work based in whole or in part on these resources, please cite the following paper as a reference for the Scéalextric approach and knowledge resource:
+Created by Tony Veale for use by the Computational Creativity (CC) community. No warranty is offered or implied. When publishing work based in whole or in part on these resources, please cite the following paper as a reference for the Scéalextric approach and knowledge resource (paper at https://aaai.org/ocs/index.php/SSS/SSS16/paper/view/12718/11961 ):
 
 Veale, T. (2016). A Rap on the Knuckles and a Twist in the Tale: From Tweeting Affective Metaphors to Generating Stories with a Moral. In Proceedings of the AAAI Spring Symposium on Ethical and Moral Considerations in Non-Human Agents. 
 
 Scéalextric:
 
-We often think of stories in terms of journeys and paths. Indeed, the classic metaphors for taking about plots are fundamentally path-based, so we talk of dramatic "twists" and unexpected "turns" in a story. Some stories are explicitly about journeys, and are often filmed as road movies (like Easy Rider andDances with Wolves). Quest-based stories involving a search (for a ring, the holy grail, etc.) are also explicitly about the path from start to end.
+We often think of stories in terms of journeys and paths. Indeed, the classic metaphors for taking about plots are fundamentally path-based, so we talk of dramatic "twists" and unexpected "turns" in a story. Some stories are explicitly about journeys, and are often filmed as road movies (like Easy Rider and Dances with Wolves). Quest-based stories involving a search (for a ring, the holy grail, etc.) are also explicitly about the path from start to end.
 
 Children love to play with train sets that allow them to build their own narrative microcosms and to imagine new stories within these toy worlds. They also love to play with dolls and action figures and combine them in new scenarios undreamt of by the toy manufacturers. Train sets, and their race-car equivalents (the most famous being Scalextric) allow kids to build complex tracks on which to run their train sets or race cars. The more complex the track, the greater the potential for narrative complexity and drama. Imagine if we (and our machines) could build stories as easily as children build train tracks and race tracks, from the same kinds of prefabricated track segments that simply click together end-to-end.
 
-We call this approach to story-telling the Scéalextric approach, where "Scéal" is the Irish word for story and Scalextric is the most famous brand of track-based car-race simulator. A snapshot of a Scalextric track is shown above. Our "plot tracks" are not composed of plastic and metal but of actions and actors. More concretely, we represent each plot piece as a triple of actions. Here is an example of an action triple:
+We call this approach to story-telling the Scéalextric approach, where "Scéal" is the Irish word for story and Scalextric is the most famous brand of track-based car-race simulator. A snapshot of a Scalextric track is shown above. Our "plot tracks" are not composed of plastic and metal but of actions and actors. More concretely, we represent each plot piece as a triple of actions.
+Here is an example of an action triple:
 
 attack   are_defeated_by   bow_down_to
 
@@ -83,7 +84,7 @@ As mundane as it may sound, a spreadsheet is perfect for this kind of representa
 Every cell, representing as it does a value-containing intersection of a named column and a named row, represents a single triple. We can share spreadsheets easily (and post them on the Web as Google docs for communal editing) and cut-and-paste relevant parts with abandon. 
 So every piece of information in Scéalextricis to be found in a spreadsheet. Each sheet can be saved as a tab-separated-values text file for easy processing by Java and Python programs, and we encourage you to add new columns and rows to each one, and to create new spreadsheets of your own with complementary forms of knowledge.
 
-Consider a semantic relationdhip P(X, Y) where P is a predicate that holds between X and Y.  We can represent a collection of triples of the form P(X, Y) in a spreadsheet with a column labelled P, a row whose first (and key) value is X, and a cell at the intersection of this row and the column labelled P that contains the value Y. This cell may contain multiple values Y1, Y2 ... Yn, each separated by commas, so this cell would represent a group of predications P(X, Y1), P(X, Y2) ... P(X, Yn)
+Consider a semantic relationship P(X, Y) where P is a predicate that holds between X and Y.  We can represent a collection of triples of the form P(X, Y) in a spreadsheet with a column labelled P, a row whose first (and key) value is X, and a cell at the intersection of this row and the column labelled P that contains the value Y. This cell may contain multiple values Y1, Y2 ... Yn, each separated by commas, so this cell would represent a group of predications P(X, Y1), P(X, Y2) ... P(X, Yn)
 
 The Scéalextric distribution contains a variety of spreadsheets, each one a triple store that stores its semantic triples in this fashion. The following are the main files in the distribution:
 
@@ -97,7 +98,7 @@ This triple maps actions (verbs) onto one or more idiomatic renderings. The acti
 
 Veale's initial bookend actions.xlsx
 
-This triple store provides a scene-establishing preamble for every action verb, so that a story beginning with that action/verb might be prefaced with this preasmble.
+This triple store provides a scene-establishing preamble for every action verb, so that a story beginning with that action/verb might be prefaced with this preamble.
 
 Veale's closing bookend actions.xlsx
 
